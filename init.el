@@ -40,3 +40,8 @@
 
 ;; yes/no prompts
 (defalias 'yes-or-no-p 'y-or-n-p)
+
+;;;; Package-specfic
+
+;; magit
+(global-set-key (kbd "C-x g") 'magit-status)
