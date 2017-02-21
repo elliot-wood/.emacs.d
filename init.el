@@ -17,6 +17,9 @@
     (load-theme 'solarized-dark t)
   (load-theme 'wombat t))
 
+;; Functions
+(load "~/.emacs.d/functions.el")
+
 ;; Misc
 (show-paren-mode t)
 
@@ -55,3 +58,4 @@
 (setq mac-command-modifier 'meta)
 (setq mac-option-modifier 'super)
 (setq ns-function-modifier 'hyper)
+
