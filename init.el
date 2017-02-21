@@ -48,3 +48,10 @@
 
 ;; magit
 (global-set-key (kbd "C-x g") 'magit-status)
+
+;;;; Operating system specific
+
+;; macOS
+(setq mac-command-modifier 'meta)
+(setq mac-option-modifier 'super)
+(setq ns-function-modifier 'hyper)
