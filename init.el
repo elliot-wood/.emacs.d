@@ -10,8 +10,6 @@
 (load "package")
 (package-initialize)
 (add-to-list 'package-archives
-	     '("marmalade" . "https://marmalade-repo.org/packages/"))
-(add-to-list 'package-archives
 	     '("melpa" . "https://melpa.org/packages/"))
 
 ;; Themes
@@ -25,6 +23,8 @@
 (setq-default indicate-empty-lines t)
 (when (not indicate-empty-lines)
   (toggle-indicate-empty-lines))
+
+(setq confirm-kill-emacs 'yes-or-no-p)
 
 ;;;; Start-up options
 
@@ -42,6 +42,9 @@
 (defalias 'yes-or-no-p 'y-or-n-p)
 
 ;;;; Package-specfic
+
+(setq custom-file "~/.emacs.d/custom.el")
+(load custom-file)
 
 ;; magit
 (global-set-key (kbd "C-x g") 'magit-status)
